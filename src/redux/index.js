@@ -11,15 +11,10 @@ import todoReducer from "./reducer/todoReducer";
 
 
 const reducers = combineReducers({
-  counterReducer: counterReducer,
   todoReducer: todoReducer,
 });
 
-// export const combinedStores = () => {
-//     const store = createStore(reducers);
-//     return store;
 
-// }
 
 //! export olarak createSore içerisinde reducer larrı yolluyoruz istediğimiz yerden çağırabiliriz...
 export const myStore = createStore(reducers);
